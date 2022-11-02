@@ -1,0 +1,197 @@
+.offer {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  /*=============== Left-Side ===============*/
+
+  &__left-data {
+    position: relative;
+  }
+  &__left-top {
+    font-family: var(--body-font);
+    font-weight: var(--font-semi-bold);
+    font-size: 1rem;
+    color: var(--orange);
+  }
+  &__left-midle {
+    font-family: var(--body-font);
+    font-weight: var(--font-semi-bold);
+    font-size: 1.875rem;
+    color: var(--black);
+  }
+  &__left-bottom {
+    position: relative;
+    font-family: var(--body-font);
+    font-weight: var(--font-semi-bold);
+    font-size: 1.125rem;
+    color: var(--orange);
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: var(--orange);
+      width: 5.3125rem;
+      height: 1px;
+      left: 114%;
+      top: 50%;
+      border-radius: 25%;
+      transform: translateY(-50%);
+    }
+  }
+  /*=============== Right-Side ===============*/
+  &__right-data {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.25rem;
+  }
+  &__right-top {
+    font-family: var(--body-font);
+    font-weight: var(--font-low);
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+    color: var(--light-gray);
+  }
+  &__country-flag {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.625rem;
+    margin-top: 1.625rem;
+  }
+  &__flag-group-1 {
+    display: flex;
+
+    img {
+      width: 2.8125rem;
+      height: 2.8125rem;
+      object-fit: cover;
+      border-radius: 50%;
+      margin: 0 0.9375rem;
+      filter: drop-shadow(0px -7px 89px rgba(0, 0, 0, 0.17))
+        drop-shadow(0px -2.55512px 32.4865px rgba(0, 0, 0, 0.117297))
+        drop-shadow(0px -1.24046px 15.7716px rgba(0, 0, 0, 0.0945694))
+        drop-shadow(0px -0.608097px 7.73152px rgba(0, 0, 0, 0.0754306))
+        drop-shadow(0px -0.240442px 3.05705px rgba(0, 0, 0, 0.0527031));
+    }
+  }
+  &__flag-group-2 {
+    display: flex;
+    align-items: center;
+    img {
+      width: 2.8125rem;
+      height: 2.8125rem;
+      object-fit: cover;
+      border-radius: 50%;
+      margin: 0 0.9375rem;
+      filter: drop-shadow(0px -7px 89px rgba(0, 0, 0, 0.17))
+        drop-shadow(0px -2.55512px 32.4865px rgba(0, 0, 0, 0.117297))
+        drop-shadow(0px -1.24046px 15.7716px rgba(0, 0, 0, 0.0945694))
+        drop-shadow(0px -0.608097px 7.73152px rgba(0, 0, 0, 0.0754306))
+        drop-shadow(0px -0.240442px 3.05705px rgba(0, 0, 0, 0.0527031));
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .offer {
+    &__right-top {
+      font-size: 12px;
+    }
+    &__flag-group-1 {
+      img {
+        width: 30px;
+        height: 30px;
+        margin: 0 0.7rem;
+      }
+    }
+    &__flag-group-2 {
+      img {
+        width: 30px;
+        height: 30px;
+        margin: 0 0.7rem;
+      }
+    }
+    &__more-btn{
+      .view-all{
+        font-size: 12px;
+      }
+    } 
+  }
+}
+
+
+// @media screen and (min-width: 500px){
+//   .offer {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//     &__right-top{
+//       width: 440px;
+//       text-align: center;
+//     }
+//     &__right-data{
+//       display: flex;
+//       flex-direction: column;
+//       align-items: center;
+//     }
+//   }
+// }
+@media screen and (min-width: 750px) {
+  .offer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+
+    //
+    &__right-top {
+      width: 356px;
+    }
+  }
+}
+@media screen and (min-width: 900px) {
+  .offer {
+    &__right-top {
+      width: 400px;
+    }
+    &__country-flag {
+      display: flex;
+      flex-direction: row;
+      margin-top: 1.625rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .offer {
+    margin-top: 5rem;
+    &__right-top {
+      width: 580px;
+    }
+    &__left-midle {
+      font-size: 3rem;
+      line-height: 160%;
+    }
+    &__country-flag {
+      display: flex;
+      flex-direction: row;
+      margin-top: 1.625rem;
+    }
+    &__flag-group-1 {
+      img {
+        width: 3.3125rem;
+        height: 3.3125rem;
+      }
+    }
+    &__flag-group-2 {
+      img {
+        width: 3.3125rem;
+        height: 3.3125rem;
+      }
+    }
+  }
+}
+
+
+

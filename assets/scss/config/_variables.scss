@@ -1,0 +1,45 @@
+/*========== Google Font Nunito+Sans ==========*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700&display=swap');
+
+/*========== Google Font Rubik ==========*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+/*========== Google Font Poppins ==========*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*========== Google Font Dm sans ==========*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+:root{
+    /*========== color ==========*/
+    --orange:#FB9C46;
+    --light-orange-1:#f0d9ca;
+    --light-orange:#F2BF62;
+    --light-dark-orange:#FF922F;
+    --orange-linear-gradient:linear-gradient(270.04deg, #F1BF62 0.05%, #FF912E 97.84%);
+    --black:#393939;
+    --green:#407F55;
+    --light-dark-green:#058E6E;
+    --nav-bottom-color:#C4C4C4;
+    --white:#ffffff;
+    --gray:#6C6C6C;
+    --light-gray:#90A3B4;
+    --secondry-gray:#8D8D8D;
+    --dots-color:#E2ECF4;
+
+    /*========== Font and typography ==========*/
+    --body-font: 'Poppins', sans-serif;
+    --second-font:'Nunito Sans',sans-serif;
+    --third-font:'DM Sans', sans-serif;
+    --fourth-font:'Rubik';
+
+    /*========== Font weight ==========*/
+    --font-low:400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --extra-bold:700;
+
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}

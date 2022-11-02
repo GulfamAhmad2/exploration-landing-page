@@ -1,0 +1,56 @@
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button,
+input {
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+main {
+    margin: auto;
+    max-width: 1440px;
+    width: 100%;
+  padding: 0 1.5625rem;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 750px) {
+  main {
+    padding: 0 2rem;
+  }
+}
+@media screen and (min-width: 950px) {
+  main {
+    padding: 0 3rem;
+  }
+}
+
+
+@media screen and (min-width: 1100px) {
+  main {
+    padding: 0 6.875rem;
+  }
+}

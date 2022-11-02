@@ -1,0 +1,120 @@
+.nav__btn{
+    display: flex;
+    align-items: center;
+    
+    button{
+        font-size: 1rem;
+        font-weight: var(--font-semi-bold);
+        color: var(--white);
+        width: 102px;
+        height: 44px;
+        border-radius: .5rem;
+        // margin: 0 1.6125rem;        
+    }
+    .login{
+        background-color: var(--green);
+    }
+    .sign-up{
+        background-color: var(--orange);
+    }
+}
+
+.home__btn{
+    margin: 2.1875rem 0 4.125rem 0;
+    .h-btn{
+        // word-wrap: none;
+        font-size: 1.125rem;
+        letter-spacing: 1px;
+        font-weight: var(--font-semi-bold);
+        color: var(--white);
+        padding: 1.3125rem 2.8125rem;
+        color: var(--white);
+        background-color: var(--light-dark-green);
+        border-radius: 1rem;
+    }
+}
+
+
+
+
+
+.offer__more-btn{
+    .view-all{
+        background-color: transparent;
+        font-weight: var(--font-low);
+        color: var(--orange);
+        font-size: 1.125rem;
+    }
+    & i.arrow-right{
+        font-size: 1rem;
+        color: var(--orange);
+        cursor: pointer;
+    }
+}
+
+.purchase__btn{
+    button{
+        background-color: transparent;
+        width: 152px;
+        height: 47px;  
+        font-weight: var(--font-semi-bold);
+        color: var(--orange);
+        border: 3px solid var(--orange);      
+        border-radius: 1rem;
+        transition: all .3s ease-in-out;
+        .purchase__book-btn{
+            font-family: var(--body-font);
+            font-size: 0.75rem;
+            
+        }
+        &:hover{
+            background-color: var(--orange);
+            color: var(--white);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

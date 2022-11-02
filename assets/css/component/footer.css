@@ -1,0 +1,125 @@
+.footer {
+  width: 100%;
+  background-color: var(--light-orange);
+  display: flex;
+  flex-direction: column;
+  padding: 0 25px;
+  margin-top: 6.75rem;
+}
+.footer__content-left {
+  margin-top: 4rem;
+}
+.footer__logo {
+  font-size: 1.5rem;
+  font-weight: var(--font-semi-bold);
+  font-family: var(--body-font);
+  color: var(--white);
+}
+.footer__about {
+  font-family: var(--third-font);
+  font-size: 0.75rem;
+  font-weight: var(low-font);
+  color: var(--white);
+  margin-top: 1.5rem;
+}
+.footer__social-media {
+  margin: 1.6875rem 0 2rem 0;
+  display: flex;
+  align-items: center;
+  grid-gap: 0.5rem;
+}
+.footer__social-media a {
+  padding: 10px 10px;
+  background-color: rgba(255, 147, 46, 0.1);
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+.footer__social-media a i {
+  font-size: 1rem;
+  color: var(--white);
+  opacity: 1;
+}
+.footer__content-right {
+  display: flex;
+  flex-direction: column;
+}
+.footer__contents {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--white);
+  padding: 0.5rem 0;
+}
+.footer__dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__dropdown h3 {
+  font-family: var(--fourth-font);
+  font-weight: var(--low-font);
+  font-size: 1rem;
+  color: var(--white);
+}
+.footer__dropdown i {
+  font-size: 30px;
+  color: var(--white);
+}
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  display: none;
+  margin: 2rem 0 0.5rem 0;
+}
+.footer__links a {
+  color: var(--white);
+  font-size: 0.75rem;
+  font-family: var(--third-font);
+  font-weight: var(--low-font);
+  cursor: pointer;
+}
+.footer__contents:hover .footer__links {
+  display: block;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 750px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 88px 35px;
+  }
+  .footer__content-right {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 30px;
+  }
+  .footer__dropdown i {
+    display: none;
+  }
+  .footer__links {
+    display: block;
+  }
+  .footer__links {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__contents {
+    border: none;
+    padding: 0;
+    margin-left: 0;
+  }
+  .footer__content-left {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .footer {
+    padding: 88px 151px 100px 151px;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */

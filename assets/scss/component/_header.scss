@@ -1,0 +1,125 @@
+.header {
+  // position: fixed;
+  // top: 0;
+  max-width: 1440px;
+  width: 100%;
+  background-color: var(--white);
+  z-index: var(--z-fixed);
+  margin: 0 auto;
+  .nav {
+    padding: 2.125rem 1.5625rem 1.0625rem 1.5625rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--nav-bottom-color);
+    &__logo {
+      width: 6.9375rem;
+      display: flex;
+      font-family: var(--body-font);
+      font-weight: var(--extra-bold);
+      font-size: 1.125rem;
+      color: var(--black);
+      cursor: pointer;
+    }
+
+    &__menu {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+      &.active {
+        top: 0;
+      }
+      @media screen and (max-width: 910px) {
+        position: absolute;
+        background-color: var(--light-orange);
+        top: -100%;
+        left: 0;
+        width: 100%;
+        padding: 4rem 0 3rem;
+        transition: 0.4s;
+      }
+    }
+    &__list {
+      display: flex;
+      align-items: center;
+      row-gap: 1rem;
+      column-gap:3.3125rem ;
+      @media screen and (max-width: 910px) {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    &__link {
+      position: relative;
+      font-family: var(--body-font);
+      font-weight: var(--font-semi-bold);
+      font-size: 1rem;
+      line-height: 24px;
+      text-decoration: none;
+      color: var(--black);
+      // margin: 0 1.6125rem;
+      transition: all 0.4s linear;
+      &::after {
+        position: absolute;
+        content: "";
+        width: 0;
+        left: 0;
+        bottom: -0.25rem;
+        height: 0.125rem;
+        border-radius: 1.5625rem;
+        background-color: var(--light-dark-orange);
+        transition: width 0.3s ease-in-out;
+      }
+      &:hover::after {
+        color: var(--light-dark-orange);
+        width: 70%;
+      }
+      &:hover {
+        color: var(--light-dark-orange);
+      }
+    }
+
+    &__toggle {
+      display: none;
+    }
+    &__close {
+      position: absolute;
+      top: 2rem;
+      right: 1rem;
+      color: var(--white);
+      font-size: 1.875rem;
+      cursor: pointer;
+      display: none;
+    }
+  }
+}
+// .active {
+//   top: 0;
+// }
+@media screen and (max-width: 910px) {
+  #nav-toggle {
+    display: block;
+  }
+  #nav-close {
+    display: block;
+  }
+}
+@media screen and (min-width: 750px) {
+  .header {
+    .nav {
+      padding: 2.125rem 2rem 1.0625rem 2rem;
+
+    }
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .header {
+    .nav {
+      padding: 2.125rem 6.875rem 1.0625rem 6.875rem;
+
+    }
+  }
+}

@@ -1,0 +1,341 @@
+.purchase {
+  margin-top: 3.8125rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*=============== Left-side ===============*/
+
+  &__left-data {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+  }
+  &__top-heading {
+    font-family: var(--body-font);
+    font-size: 1.875rem;
+    font-weight: var(--font-semi-bold);
+    letter-spacing: 0.035em;
+    line-height: 160%;
+    color: var(--black);
+  }
+  &__midle-paragraph {
+    font-family: var(--body-font);
+    font-weight: var(--font-low);
+    font-size: 0.75rem;
+    line-height: 200%;
+    color: var(--light-gray);
+    margin-top: 1rem;
+  }
+  &__btn {
+    margin-top: 1.8125rem;
+  }
+  &__book-btn {
+    margin-right: 1rem;
+  }
+
+  /*=============== right-side ===============*/
+  &__right-images {
+    position: relative;
+    margin-top: 3.875rem;
+  }
+
+  &__images {
+    position: relative;
+    padding: 2rem;
+    width: 18.094375rem;
+    height: 18.094375rem;
+    border: 3px inset rgba(255, 147, 47, 0.5);
+    border-radius: 50%;
+    background-color: transparent;
+    overflow: hidden;
+
+    img {
+      position: absolute;
+      height: 17.5rem;
+      // top: 2.5rem;
+      left: 0.9rem;
+    }
+  }
+  &__image-ellipse {
+    width: 14.0625rem;
+    height: 14.0625rem;
+    border-radius: 50%;
+    background-color: var(--light-orange-1);
+  }
+  &__ellipse-1 {
+    position: absolute;
+    top: -0.625rem;
+    left: 4.6875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.184375rem;
+    height: 2.184375rem;
+    background: #f6f6f6;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0px -7px 89px rgba(0, 0, 0, 0.17),
+      0px -2.55512px 32.4865px rgba(0, 0, 0, 0.117297),
+      0px -1.24046px 15.7716px rgba(0, 0, 0, 0.0945694),
+      0px -0.608097px 7.73152px rgba(0, 0, 0, 0.0754306),
+      0px -0.240442px 3.05705px rgba(0, 0, 0, 0.0527031);
+  }
+  &__ellipse-2 {
+    position: absolute;
+    top: 4rem;
+    left: -2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--body-font);
+    font-size: 0.625rem;
+    height: 3rem;
+    width: 4.6875rem;
+    line-height: 0.9rem;
+    background-color: var(--white);
+    border-radius: 0.625rem;
+    box-shadow: 0px 9px 121px rgba(251, 156, 70, 0.23),
+      0px 2.88326px 18.4837px rgba(251, 156, 70, 0.0583613),
+      0px 1.33126px 17.4951px rgba(251, 156, 70, 0.0811701);
+    img {
+      width: 0.5rem;
+      height: 0.5rem;
+      object-fit: cover;
+      margin-top: 0.3rem;
+    }
+  }
+  &__like-count {
+    font-weight: var(--font-semi-bold);
+    color: var(--orange);
+    margin-top: 0.2rem;
+  }
+  &__lesson {
+    font-weight: var(--font-low);
+    color: var(--secondry-gray);
+  }
+
+  &__ellipse-3 {
+    position: absolute;
+    right: 0.625rem;
+    bottom: 2.6875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.184375rem;
+    height: 2.184375rem;
+    background: #f6f6f6;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0px -7px 89px rgba(0, 0, 0, 0.17),
+      0px -2.55512px 32.4865px rgba(0, 0, 0, 0.117297),
+      0px -1.24046px 15.7716px rgba(0, 0, 0, 0.0945694),
+      0px -0.608097px 7.73152px rgba(0, 0, 0, 0.0754306),
+      0px -0.240442px 3.05705px rgba(0, 0, 0, 0.0527031);
+  }
+}
+// @media screen and (min-width: 500px) {
+//   .purchase{
+//     &__top-heading {
+//       text-align: center;
+//       width: 400px;
+//     }
+//     &__midle-paragraph {
+//       width: 398px;
+//     }
+//   }
+
+// }
+
+@media screen and (min-width: 750px) {
+  .purchase {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    // align-items: center;
+    &__top-heading {
+      width: 398px;
+    }
+    &__midle-paragraph {
+      width: 398px;
+    }
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .purchase {
+    &__images {
+      width: 350px;
+      height: 350px;
+
+      img {
+        height: 300px;
+        left: 1.5rem;
+        bottom: -0.5rem;
+      }
+    }
+    &__image-ellipse {
+      width: 270px;
+      height: 270px;
+      margin: 5px;
+    }
+    &__ellipse-1 {
+      width: 45px;
+      height: 45px;
+      top: -0.325rem;
+      left: 4.6875rem;
+      img {
+        width: 0.9rem;
+        height: 0.9rem;
+        object-fit: cover;
+      }
+    }
+    &__ellipse-2 {
+      top: 5.2rem;
+      left: -1.5rem;
+    }
+
+    &__ellipse-3 {
+      width: 45px;
+      height: 45px;
+      right: 1rem;
+      bottom: 3rem;
+      img {
+        width: 0.9rem;
+        height: 0.9rem;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .purchase {
+    margin-top: 8.9375rem;
+    &__images {
+      width: 497px;
+      height: 497px;
+      border: 5px solid var(--light-orange-1);
+
+      img {
+        height: 527px;
+        left: 0rem;
+        bottom: -5.5rem;
+      }
+    }
+    &__image-ellipse {
+      width: 386px;
+      height: 386px;
+      margin: 20px;
+    }
+
+    &__ellipse-1 {
+      width: 60px;
+      height: 60px;
+      top: -1.125rem;
+      left: 8.125rem;
+      img {
+        width: 1.1rem;
+        height: 1.3125rem;
+        object-fit: cover;
+      }
+    }
+    &__ellipse-2 {
+      width: 8.6875rem;
+      height: 5.1875rem;
+      top: 6.8125rem;
+      left: -3.75rem;
+      img {
+        margin-top: 0.575rem;
+        width: 1.125rem;
+        height: 1.125rem;
+      }
+    }
+    &__like-count {
+      font-size: 1rem;
+      margin-top: 0.5rem;
+    }
+    &__lesson {
+      font-size: 0.875rem;
+      margin-top: 0.3rem;
+    }
+
+    &__ellipse-3 {
+      width: 60px;
+      height: 60px;
+      right: 1.25rem;
+      bottom: 4.6875rem;
+      img {
+        width: 1.1875rem;
+        height: 1.3125rem;
+        object-fit: cover;
+      }
+    }
+    &__top-heading {
+      font-size: 2.5rem;
+      width: 545px;
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .purchase {
+  /*=============== Left-side ===============*/
+
+    &__top-heading {
+      font-size: 1.2rem;
+      width: 219px;
+    }
+    &__btn {
+      button {
+        width: 103px;
+    height: 47px;
+    border-radius: 10px;
+    font-size: 10px;
+    border: 2px solid ;
+      }
+    }
+
+  /*=============== right-side ===============*/
+  &__images {
+    width: 230px;
+    height: 230px;
+
+    img {
+      height: 200px;
+    left: 1rem;
+    bottom: -1rem;
+    }
+  }
+  &__image-ellipse {
+    width: 160px;
+    height: 160px;
+    margin: 0px;
+  }
+  &__ellipse-1 {
+    width: 35px;
+    height: 35px;
+    top: -0.8rem;
+    left: 3.6875rem;
+    img {
+      width: 0.7rem;
+    height: 0.7rem;
+    }
+  }
+  &__ellipse-2 {
+    top: 5.2rem;
+    left: -1.5rem;
+  }
+
+  &__ellipse-3 {
+    width: 35px;
+    height: 35px;
+    right: .6rem;
+    bottom: 1.6rem;;
+    img {
+      width: 0.7rem;
+    height: 0.7rem;
+    }
+  }
+  }
+}

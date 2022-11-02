@@ -1,0 +1,144 @@
+.education {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  &__left {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__heading {
+    font-family: var(--body-font);
+    font-size: 1.875rem;
+    font-weight: var(--font-semi-bold);
+    color: var(--orange);
+    line-height: 52px;
+    letter-spacing: 0.3px;
+  }
+  &__paragraph {
+    font-family: var(--body-font);
+    font-size: 0.75rem;
+    font-weight: var(--low-font);
+    line-height: 2rem;
+    letter-spacing: 0.3px;
+    color: var(--light-gray);
+  }
+  &__right {
+    margin-top: 2.25rem;
+    .slider-dots {
+      .dots {
+        list-style: none;
+        display: flex !important;
+        margin-top: 1.1875rem;
+      }
+      button {
+        font-size: 0;
+        width: 6px;
+        height: 6px;
+        margin-right: 0.75rem;
+        border: none;
+        outline: none;
+        background-color: var(--dots-color);
+        border-radius: 50px;
+        cursor: pointer;
+      }
+      li.slick-active button{
+        background: var(--orange);
+        transition: all 0.3s ease;
+    }
+      
+    }
+  }
+  &__rating-star {
+    display: flex;
+    width: 17px;
+    height: 17px;
+    column-gap: .5rem;
+    
+  }
+
+  &__slider-paragraph {
+    font-family: var(--body-font);
+    font-size: 0.75rem;
+    font-style: italic;
+    font-weight: var(--low-font);
+    line-height: 200%;
+    color: var(--light-gray);
+    margin-top: 1rem;
+  }
+  &__slider-profile {
+    display: flex;
+    align-items: center;
+    margin-top: 1.25rem;
+  }
+  &__profile-img {
+    margin-right: 0.75rem;
+    img {
+      width: 2.3125rem;
+      height: 2.3125rem;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+  &__profile-names {
+    .name {
+      color: var(--orange);
+      font-family: var(--body-font);
+      font-size: 0.625rem;
+      font-weight: var(--font-semi-bold);
+    }
+    .about {
+      color: var(--light-gray);
+      font-size: 0.5rem;
+      font-weight: var(--low-font);
+    }
+  }
+}
+// @media screen and (min-width:500px) {
+//   .education{
+//     &__left{
+//     text-align: center;
+//   }
+//   &__heading{
+//       width: 400px;
+//     }
+//     &__paragraph{
+//       width: 400px;
+//     }
+   
+//   }
+  
+// }
+@media screen and (min-width:750px) {
+  .education{
+    display: flex;
+  }
+}
+
+@media screen and (max-width:350px) {
+  .education{
+    &__heading{
+      font-size: 20px;
+      line-height: 160%;
+  }
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
